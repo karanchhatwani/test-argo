@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: release-name-sftpgo
+  name: sftpgoby-argo
   labels:
     helm.sh/chart: sftpgo-0.19.0
-    app.kubernetes.io/name: sftpgo
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/name: sftpgoby-argo
+    app.kubernetes.io/instance: sftpgoby-argo
     app.kubernetes.io/version: "2.5.4"
     app.kubernetes.io/managed-by: Helm
 spec:
@@ -13,12 +13,12 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: sftpgo
-      app.kubernetes.io/instance: release-name
+      app.kubernetes.io/instance: sftpgoby-argo
   template:
     metadata:
       labels:
         app.kubernetes.io/name: sftpgo
-        app.kubernetes.io/instance: release-name
+        app.kubernetes.io/instance: sftpgoby-argo
     spec:
       serviceAccountName: default
       hostNetwork: false
@@ -82,4 +82,4 @@ spec:
       volumes:
         - name: config
           configMap:
-            name: release-name-sftpgo
+            name: sftpgoby-argo-sftpgo
