@@ -1,3 +1,5 @@
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+
 <div align="center">
 
 [![pathwaycom/llm-app: Build your LLM App in 30 lines of code](https://d14l3brkh44201.cloudfront.net/pathway-llm.png)](https://pathway.com/)
